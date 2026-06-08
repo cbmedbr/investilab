@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Landmark, TrendingUp, Building2, Bitcoin } from 'lucide-react'
 import { DisclaimerBanner } from '@/components/layout/disclaimer-banner'
+import { IndicatorsBar } from '@/components/content/indicators-bar'
 
 export const metadata: Metadata = {
   title: 'Calculadoras de investimento',
@@ -53,6 +54,7 @@ export default function CalculadorasPage() {
             Simule rentabilidade líquida, impostos e indicadores para cada classe
             de ativo.
           </p>
+          <IndicatorsBar />
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
